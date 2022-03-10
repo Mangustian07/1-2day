@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie-5</title>
+</head>
+<body>
+    <!--Перестал считать кол-во кликов в консоли!-->
+    <a href="#">Click me and drop!</a>
+    <script>
+        function addListener(eventName, target, fn){
+            target.addEventListener(eventName,fn);
+        }
+        function removeListener(eventName, target, fn){
+            target.removeEventListener(eventName,fn);
+        }
+        function someHandler(){
+            console.log("...");
+        }
+        addListener("click", document.querySelector("a"), someHandler);
+        removeListener("click", document.querySelector("a"), someHandler);
+    </script>
+</body>
+</html>

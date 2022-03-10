@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie-1</title>
+</head>
+<body>
+    <script>
+        function createDivWithText(txt){
+            let div = document.createElement("div");
+            div.innerText = txt;
+            document.body.append(div);
+            return div;
+        }
+        let cnsole = createDivWithText("Liberté, égalité, fraternité!(Свобода, равенство, братство!)")
+        console.log(cnsole);
+    </script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadanie-2</title>
+</head>
+<body>
+    <!--Smells Like Teen Spirit-->
+    <script>
+        let txt = document.createElement("div");
+        txt.innerHTML = "Hello, how low?";
+        let txt1 = document.createElement("div");
+        txt1.innerHTML = "Hello, hello...";
+        function prependElement(what,where){
+            where.prepend(what);
+            document.body.append(where);
+        }
+            prependElement(txt,txt1);
+    </script>
+</body>
+</html>
